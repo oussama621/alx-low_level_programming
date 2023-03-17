@@ -1,28 +1,22 @@
-#include<stdio.h>
-
+#include <stdio.h>
 /**
- * main - main  is a program that prints all possible combinations of numbers
- *
- * Return: 0
- */
-
+* main-main that prints all possible combinations of numbers
+*
+* Return: always 0
+*/
 int main(void)
 {
 	int i;
 
-	for (i = 0 ; i < 10 ; i++)
+	for (i = 0; i < 10 ; i++)
 	{
-		if (i == 9)
+		putchar(i '0');
+		if (i != 9)
 		{
-			putchar(i + '0');
-			putchar(' ');
-		}
-		else
-		{
-			putchar(i + '0');
-			putchar(',');
-			putchar(' ');
+		putchar (',');
+		putchar(' ');
 		}
 	}
+	putchar ('\n');
 	return (0);
 }
